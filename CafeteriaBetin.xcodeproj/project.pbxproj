@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D3CC1EF216E4AFD0027A9F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CC1EE216E4AFD0027A9F2 /* AppDelegate.swift */; };
+		3D3CC1F1216E4AFD0027A9F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CC1F0216E4AFD0027A9F2 /* ViewController.swift */; };
+		3D3CC1F4216E4AFD0027A9F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3CC1F2216E4AFD0027A9F2 /* Main.storyboard */; };
+		3D3CC1F6216E4B020027A9F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3CC1F5216E4B020027A9F2 /* Assets.xcassets */; };
+		3D3CC1F9216E4B020027A9F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3CC1F7216E4B020027A9F2 /* LaunchScreen.storyboard */; };
+		3D3CC204216E4B020027A9F2 /* CafeteriaBetinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CC203216E4B020027A9F2 /* CafeteriaBetinTests.swift */; };
+		3D3CC20F216E4B020027A9F2 /* CafeteriaBetinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CC20E216E4B020027A9F2 /* CafeteriaBetinUITests.swift */; };
+		3D3CC223216E5B9F0027A9F2 /* Productos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CC222216E5B9F0027A9F2 /* Productos.swift */; };
+		3DEFFE3B216FDD2C00875233 /* CeldaProducto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFFE3A216FDD2C00875233 /* CeldaProducto.swift */; };
+		3DEFFE3D216FDE4900875233 /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFFE3C216FDE4900875233 /* Comentario.swift */; };
+		3DEFFE3F216FDEB800875233 /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFFE3E216FDEB800875233 /* Datos.swift */; };
+		3DEFFE41216FE9E700875233 /* DetalleProductoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFFE40216FE9E700875233 /* DetalleProductoController.swift */; };
+		3DEFFE432170813B00875233 /* ListaComentarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFFE422170813B00875233 /* ListaComentarioController.swift */; };
+		3DEFFE46217082E000875233 /* CeldaComentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFFE45217082E000875233 /* CeldaComentario.swift */; };
+		3DEFFE482170A01700875233 /* AgregarComentarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFFE472170A01700875233 /* AgregarComentarioController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D3CC200216E4B020027A9F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D3CC1E3216E4AFD0027A9F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D3CC1EA216E4AFD0027A9F2;
+			remoteInfo = CafeteriaBetin;
+		};
+		3D3CC20B216E4B020027A9F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D3CC1E3216E4AFD0027A9F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D3CC1EA216E4AFD0027A9F2;
+			remoteInfo = CafeteriaBetin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D3CC1EB216E4AFD0027A9F2 /* CafeteriaBetin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeteriaBetin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3CC1EE216E4AFD0027A9F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D3CC1F0216E4AFD0027A9F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D3CC1F3216E4AFD0027A9F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D3CC1F5216E4B020027A9F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D3CC1F8216E4B020027A9F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D3CC1FA216E4B020027A9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3CC1FF216E4B020027A9F2 /* CafeteriaBetinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeteriaBetinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3CC203216E4B020027A9F2 /* CafeteriaBetinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeteriaBetinTests.swift; sourceTree = "<group>"; };
+		3D3CC205216E4B020027A9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3CC20A216E4B020027A9F2 /* CafeteriaBetinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeteriaBetinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3CC20E216E4B020027A9F2 /* CafeteriaBetinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeteriaBetinUITests.swift; sourceTree = "<group>"; };
+		3D3CC210216E4B020027A9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3CC222216E5B9F0027A9F2 /* Productos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Productos.swift; sourceTree = "<group>"; };
+		3DEFFE3A216FDD2C00875233 /* CeldaProducto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaProducto.swift; sourceTree = "<group>"; };
+		3DEFFE3C216FDE4900875233 /* Comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
+		3DEFFE3E216FDEB800875233 /* Datos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
+		3DEFFE40216FE9E700875233 /* DetalleProductoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleProductoController.swift; sourceTree = "<group>"; };
+		3DEFFE422170813B00875233 /* ListaComentarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaComentarioController.swift; sourceTree = "<group>"; };
+		3DEFFE45217082E000875233 /* CeldaComentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaComentario.swift; sourceTree = "<group>"; };
+		3DEFFE472170A01700875233 /* AgregarComentarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarComentarioController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D3CC1E8216E4AFD0027A9F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D3CC1FC216E4B020027A9F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D3CC207216E4B020027A9F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D3CC1E2216E4AFD0027A9F2 = {
+			isa = PBXGroup;
+			children = (
+				3D3CC1ED216E4AFD0027A9F2 /* CafeteriaBetin */,
+				3D3CC202216E4B020027A9F2 /* CafeteriaBetinTests */,
+				3D3CC20D216E4B020027A9F2 /* CafeteriaBetinUITests */,
+				3D3CC1EC216E4AFD0027A9F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D3CC1EC216E4AFD0027A9F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CC1EB216E4AFD0027A9F2 /* CafeteriaBetin.app */,
+				3D3CC1FF216E4B020027A9F2 /* CafeteriaBetinTests.xctest */,
+				3D3CC20A216E4B020027A9F2 /* CafeteriaBetinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D3CC1ED216E4AFD0027A9F2 /* CafeteriaBetin */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CC221216E4CFE0027A9F2 /* Models */,
+				3D3CC220216E4CEB0027A9F2 /* Views */,
+				3D3CC21F216E4CE20027A9F2 /* ViewControllers */,
+				3D3CC21E216E4CDC0027A9F2 /* App */,
+				3D3CC21D216E4CC40027A9F2 /* Resources */,
+			);
+			path = CafeteriaBetin;
+			sourceTree = "<group>";
+		};
+		3D3CC202216E4B020027A9F2 /* CafeteriaBetinTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CC203216E4B020027A9F2 /* CafeteriaBetinTests.swift */,
+				3D3CC205216E4B020027A9F2 /* Info.plist */,
+			);
+			path = CafeteriaBetinTests;
+			sourceTree = "<group>";
+		};
+		3D3CC20D216E4B020027A9F2 /* CafeteriaBetinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CC20E216E4B020027A9F2 /* CafeteriaBetinUITests.swift */,
+				3D3CC210216E4B020027A9F2 /* Info.plist */,
+			);
+			path = CafeteriaBetinUITests;
+			sourceTree = "<group>";
+		};
+		3D3CC21D216E4CC40027A9F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CC1F5216E4B020027A9F2 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3D3CC21E216E4CDC0027A9F2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CC1FA216E4B020027A9F2 /* Info.plist */,
+				3D3CC1EE216E4AFD0027A9F2 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		3D3CC21F216E4CE20027A9F2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DEFFE3A216FDD2C00875233 /* CeldaProducto.swift */,
+				3D3CC1F0216E4AFD0027A9F2 /* ViewController.swift */,
+				3DEFFE40216FE9E700875233 /* DetalleProductoController.swift */,
+				3DEFFE422170813B00875233 /* ListaComentarioController.swift */,
+				3DEFFE45217082E000875233 /* CeldaComentario.swift */,
+				3DEFFE472170A01700875233 /* AgregarComentarioController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3D3CC220216E4CEB0027A9F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CC1F2216E4AFD0027A9F2 /* Main.storyboard */,
+				3D3CC1F7216E4B020027A9F2 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3D3CC221216E4CFE0027A9F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CC222216E5B9F0027A9F2 /* Productos.swift */,
+				3DEFFE3C216FDE4900875233 /* Comentario.swift */,
+				3DEFFE3E216FDEB800875233 /* Datos.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D3CC1EA216E4AFD0027A9F2 /* CafeteriaBetin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D3CC213216E4B020027A9F2 /* Build configuration list for PBXNativeTarget "CafeteriaBetin" */;
+			buildPhases = (
+				3D3CC1E7216E4AFD0027A9F2 /* Sources */,
+				3D3CC1E8216E4AFD0027A9F2 /* Frameworks */,
+				3D3CC1E9216E4AFD0027A9F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CafeteriaBetin;
+			productName = CafeteriaBetin;
+			productReference = 3D3CC1EB216E4AFD0027A9F2 /* CafeteriaBetin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D3CC1FE216E4B020027A9F2 /* CafeteriaBetinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D3CC216216E4B020027A9F2 /* Build configuration list for PBXNativeTarget "CafeteriaBetinTests" */;
+			buildPhases = (
+				3D3CC1FB216E4B020027A9F2 /* Sources */,
+				3D3CC1FC216E4B020027A9F2 /* Frameworks */,
+				3D3CC1FD216E4B020027A9F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D3CC201216E4B020027A9F2 /* PBXTargetDependency */,
+			);
+			name = CafeteriaBetinTests;
+			productName = CafeteriaBetinTests;
+			productReference = 3D3CC1FF216E4B020027A9F2 /* CafeteriaBetinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D3CC209216E4B020027A9F2 /* CafeteriaBetinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D3CC219216E4B020027A9F2 /* Build configuration list for PBXNativeTarget "CafeteriaBetinUITests" */;
+			buildPhases = (
+				3D3CC206216E4B020027A9F2 /* Sources */,
+				3D3CC207216E4B020027A9F2 /* Frameworks */,
+				3D3CC208216E4B020027A9F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D3CC20C216E4B020027A9F2 /* PBXTargetDependency */,
+			);
+			name = CafeteriaBetinUITests;
+			productName = CafeteriaBetinUITests;
+			productReference = 3D3CC20A216E4B020027A9F2 /* CafeteriaBetinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D3CC1E3216E4AFD0027A9F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Alumno;
+				TargetAttributes = {
+					3D3CC1EA216E4AFD0027A9F2 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					3D3CC1FE216E4B020027A9F2 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 3D3CC1EA216E4AFD0027A9F2;
+					};
+					3D3CC209216E4B020027A9F2 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 3D3CC1EA216E4AFD0027A9F2;
+					};
+				};
+			};
+			buildConfigurationList = 3D3CC1E6216E4AFD0027A9F2 /* Build configuration list for PBXProject "CafeteriaBetin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D3CC1E2216E4AFD0027A9F2;
+			productRefGroup = 3D3CC1EC216E4AFD0027A9F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D3CC1EA216E4AFD0027A9F2 /* CafeteriaBetin */,
+				3D3CC1FE216E4B020027A9F2 /* CafeteriaBetinTests */,
+				3D3CC209216E4B020027A9F2 /* CafeteriaBetinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D3CC1E9216E4AFD0027A9F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3CC1F9216E4B020027A9F2 /* LaunchScreen.storyboard in Resources */,
+				3D3CC1F6216E4B020027A9F2 /* Assets.xcassets in Resources */,
+				3D3CC1F4216E4AFD0027A9F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D3CC1FD216E4B020027A9F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D3CC208216E4B020027A9F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D3CC1E7216E4AFD0027A9F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DEFFE482170A01700875233 /* AgregarComentarioController.swift in Sources */,
+				3DEFFE41216FE9E700875233 /* DetalleProductoController.swift in Sources */,
+				3D3CC1F1216E4AFD0027A9F2 /* ViewController.swift in Sources */,
+				3D3CC1EF216E4AFD0027A9F2 /* AppDelegate.swift in Sources */,
+				3DEFFE46217082E000875233 /* CeldaComentario.swift in Sources */,
+				3D3CC223216E5B9F0027A9F2 /* Productos.swift in Sources */,
+				3DEFFE432170813B00875233 /* ListaComentarioController.swift in Sources */,
+				3DEFFE3B216FDD2C00875233 /* CeldaProducto.swift in Sources */,
+				3DEFFE3D216FDE4900875233 /* Comentario.swift in Sources */,
+				3DEFFE3F216FDEB800875233 /* Datos.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D3CC1FB216E4B020027A9F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3CC204216E4B020027A9F2 /* CafeteriaBetinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D3CC206216E4B020027A9F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3CC20F216E4B020027A9F2 /* CafeteriaBetinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D3CC201216E4B020027A9F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D3CC1EA216E4AFD0027A9F2 /* CafeteriaBetin */;
+			targetProxy = 3D3CC200216E4B020027A9F2 /* PBXContainerItemProxy */;
+		};
+		3D3CC20C216E4B020027A9F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D3CC1EA216E4AFD0027A9F2 /* CafeteriaBetin */;
+			targetProxy = 3D3CC20B216E4B020027A9F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D3CC1F2216E4AFD0027A9F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3CC1F3216E4AFD0027A9F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D3CC1F7216E4B020027A9F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3CC1F8216E4B020027A9F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D3CC211216E4B020027A9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D3CC212216E4B020027A9F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D3CC214216E4B020027A9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CafeteriaBetin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.CafeteriaBetin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D3CC215216E4B020027A9F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CafeteriaBetin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.CafeteriaBetin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D3CC217216E4B020027A9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CafeteriaBetinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.CafeteriaBetinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CafeteriaBetin.app/CafeteriaBetin";
+			};
+			name = Debug;
+		};
+		3D3CC218216E4B020027A9F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CafeteriaBetinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.CafeteriaBetinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CafeteriaBetin.app/CafeteriaBetin";
+			};
+			name = Release;
+		};
+		3D3CC21A216E4B020027A9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CafeteriaBetinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.CafeteriaBetinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CafeteriaBetin;
+			};
+			name = Debug;
+		};
+		3D3CC21B216E4B020027A9F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CafeteriaBetinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.CafeteriaBetinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CafeteriaBetin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D3CC1E6216E4AFD0027A9F2 /* Build configuration list for PBXProject "CafeteriaBetin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3CC211216E4B020027A9F2 /* Debug */,
+				3D3CC212216E4B020027A9F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D3CC213216E4B020027A9F2 /* Build configuration list for PBXNativeTarget "CafeteriaBetin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3CC214216E4B020027A9F2 /* Debug */,
+				3D3CC215216E4B020027A9F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D3CC216216E4B020027A9F2 /* Build configuration list for PBXNativeTarget "CafeteriaBetinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3CC217216E4B020027A9F2 /* Debug */,
+				3D3CC218216E4B020027A9F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D3CC219216E4B020027A9F2 /* Build configuration list for PBXNativeTarget "CafeteriaBetinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3CC21A216E4B020027A9F2 /* Debug */,
+				3D3CC21B216E4B020027A9F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D3CC1E3216E4AFD0027A9F2 /* Project object */;
+}
